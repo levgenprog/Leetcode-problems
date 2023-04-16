@@ -84,7 +84,7 @@ function solution(entryPoint) {
         }
     }
 
-
+    
     for (const obj of switchArr) {
         if (obj.elem.parentNode !== null) {
             if (!obj.elem.parentNode.hasAttribute('x-make')) {
