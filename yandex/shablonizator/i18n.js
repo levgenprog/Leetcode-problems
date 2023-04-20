@@ -152,14 +152,35 @@ function getI18nText({ stringTokens, variables, translations, locale }) {
 // console.log(getI18nText({ stringTokens, variables, translations, locale: "ru-RU" }));
 // console.log(getI18nText({ stringTokens, variables, translations, locale: "en-US" }));
 
-console.log(getI18nText({
-    stringTokens: ["key", " ", "$var", " ", "#translation"],
-    variables: { var: 100 },
-    translations: {
-        "ru-RU": { translation: "тест" },
-        "en-US": { translation: "test" },
-        "de-DE": { translation: "prüfen" },
-        "hi-IN": { translation: "परीक्षा" },
-        "ar-AA": { translation: "امتحان" },
+// console.log(getI18nText({
+//     stringTokens: ["key", " ", "$var", " ", "#translation"],
+//     variables: { var: 100 },
+//     translations: {
+//         "ru-RU": { translation: "тест" },
+//         "en-US": { translation: "test" },
+//         "de-DE": { translation: "prüfen" },
+//         "hi-IN": { translation: "परीक्षा" },
+//         "ar-AA": { translation: "امتحان" },
+//     },
+// }));
+
+let prices = [
+    {
+        "articleId": 1,
+        "price": 100,
+        "date": "2023-03-01"
     },
-}));
+    {
+        "articleId": 2,
+        "price": 200,
+        "date": "2023-03-01"
+    },
+    {
+        "articleId": 3,
+        "price": 5,
+        "date": "2023-03-01",
+        "currency": "USD"
+    }
+]
+
+console.log(prices);
